@@ -9,7 +9,7 @@ export const InstagramFeed = () => {
             <div className="flex">
                 <SideNavbar />
                 <StoriesBar />
-                <SuggestionBar />
+                {/* <SuggestionBar /> */}
             </div>
         </Fragment>
     );

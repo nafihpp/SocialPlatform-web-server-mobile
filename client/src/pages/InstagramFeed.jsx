@@ -1,16 +1,17 @@
 import React, { Fragment } from "react";
 import { SideNavbar } from "../components/SideNavbar";
 import { StoriesBar } from "../components/StoriesBar";
-import { SuggestionBar } from "../components/SuggestionBar";
+import { InstaPosts } from "../components/InstaPosts";
 
 export const InstagramFeed = () => {
     return (
-        <Fragment>
-            <div className="flex">
-                <SideNavbar />
+        <div className="flex max-h-screen w-[100%]">
+            <SideNavbar />
+
+            <div>
                 <StoriesBar />
-                <SuggestionBar />
+                <InstaPosts />
             </div>
-        </Fragment>
+        </div>
     );
 };

@@ -1,12 +1,21 @@
 import "./styles/global.css";
 import "./App.css";
 import { InstagramFeed } from "./pages";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 function App() {
+    const location = useLocation();
+
+    useEffect(() => {
+        nprogress.start();
+        nprogress.done();
+    }, [location.pathname]);
     return (
-        <>
-            <InstagramFeed />
-        </>
+        <Routes>
+            <Routes>
+                <Route path="/" element={<InstagramFeed />} />
+            </Routes>
+        </Routes>
     );
 }
 

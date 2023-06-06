@@ -16,7 +16,7 @@ export const PostCard = () => {
                         dr.heba_youshra
                     </div>
                 </div>
-                <div className="options">...</div>
+                <div className="options font-bold">...</div>
             </div>
             <div className="middle">
                 <img

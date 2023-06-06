@@ -11,7 +11,7 @@ function App() {
 
     useEffect(() => {
         nProgress.start();
-        nprogress.done();
+        nProgress.done();
     }, [location.pathname]);
     return (
         <Routes>

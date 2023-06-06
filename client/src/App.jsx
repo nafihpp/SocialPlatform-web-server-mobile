@@ -3,12 +3,14 @@ import "./App.css";
 import { InstagramFeed } from "./pages";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import "nprogress/nprogress.css";
+import nProgress from "nprogress";
 
 function App() {
     const location = useLocation();
 
     useEffect(() => {
-        nprogress.start();
+        nProgress.start();
         nprogress.done();
     }, [location.pathname]);
     return (

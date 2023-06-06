@@ -13,9 +13,7 @@ function App() {
     }, [location.pathname]);
     return (
         <Routes>
-            <Routes>
-                <Route path="/" element={<InstagramFeed />} />
-            </Routes>
+            <Route path="/" element={<InstagramFeed />} />
         </Routes>
     );
 }

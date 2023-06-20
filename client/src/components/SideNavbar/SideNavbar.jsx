@@ -1,5 +1,3 @@
-import React from "react";
-
 export const SideNavbar = () => {
     return (
         <div className="max-w-[200px] text-black w-[500px] border-r-[1px] border-[#dbdbdb]">
@@ -287,7 +285,11 @@ export const SideNavbar = () => {
                     </div>
                     <p className="text-left">Create</p>
                 </li>
-                <li className="flex">Profile</li>
+                <li className="flex">
+                    <div className="profile">
+                        <img src="https://scontent.cdninstagram.com/v/t51.2885-19/329249798_1316544368953441_6669491314714123868_n.jpg?stp=dst-jpg_s150x150&_nc_ht=scontent.cdninstagram.com&_nc_cat=101&_nc_ohc=wNvnCsCFS-sAX-JURnP&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfBcABcCha0zaIXTyfs9pQPYdGiTz7icwHWkIW8SZxZm4w&oe=6495880F&_nc_sid=df044f" />
+                    </div>
+                </li>
                 <li className="mt-10 flex">
                     <div className="more">
                         <svg

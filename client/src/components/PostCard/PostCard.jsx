@@ -2,7 +2,7 @@ import React from "react";
 
 export const PostCard = () => {
     return (
-        <div className="container mt-5 border p-2 rounded-sm w-[100%]">
+        <div className="container mt-5 border-b p-2 rounded-sm w-[80%]">
             <div className="top flex justify-between">
                 <div className="profile-pic-container flex">
                     <div className="profile-pic-img border-[2px] border-[#000] overflow-hidden rounded-[50%] w-10 h-10">

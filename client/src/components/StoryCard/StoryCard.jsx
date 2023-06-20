@@ -1,11 +1,12 @@
 export const StoryCard = () => {
     return (
-        <div className="rounded-[50%] flex-shrink-0 mr-4 border-[3px] border-[red] overflow-hidden w-20 h-20 ml-2">
+        <div className="flex-shrink-0 mr-4 overflow-hidden w-20 h-[100px] ml-2">
             <img
                 src="https://i.pinimg.com/736x/c6/de/4f/c6de4fbc92c32c25dd90c41884968d63--die-minions-minion-s.jpg"
-                className=" w-20 h-20"
                 style={{ objectFit: "cover" }}
+                className="rounded-[50%] w-20 h-20 overflow-hidden  border-[3px] border-[red]"
             />
+            <p className="w-[100%] truncate text-center">nafih888888</p>
         </div>
     );
 };

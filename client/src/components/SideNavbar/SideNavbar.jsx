@@ -38,7 +38,7 @@ export const SideNavbar = () => {
                     </div>
                 </li>
                 <li className="flex">
-                    <div className="home">
+                    <div className="home mr-2">
                         <svg
                             aria-label="Home"
                             class="_ab6-"
@@ -61,7 +61,7 @@ export const SideNavbar = () => {
                     <p className="text-left md:hidden">Home</p>
                 </li>
                 <li className="flex">
-                    <div className="search">
+                    <div className="search mr-2">
                         <svg
                             aria-label="Search"
                             class="_ab6-"
@@ -96,7 +96,7 @@ export const SideNavbar = () => {
                     <p className="md:hidden">Search</p>
                 </li>
                 <li className="flex">
-                    <div className="explore">
+                    <div className="explore mr-2">
                         <svg
                             aria-label="Explore"
                             class="_ab6-"
@@ -134,7 +134,7 @@ export const SideNavbar = () => {
                     <p className="text-left md:hidden">Explore</p>
                 </li>
                 <li className="flex">
-                    <div className="reels">
+                    <div className="reels mr-2">
                         <svg
                             aria-label="Reels"
                             class="_ab6-"
@@ -194,7 +194,7 @@ export const SideNavbar = () => {
                     <p className="md:hidden">Reels</p>
                 </li>
                 <li className="flex">
-                    <div className="messages">
+                    <div className="messages mr-2">
                         <svg
                             aria-label="Messenger"
                             class="_ab6-"
@@ -221,7 +221,7 @@ export const SideNavbar = () => {
                     <p className="md:hidden">Messages</p>
                 </li>
                 <li className="flex">
-                    <div className="notifiications">
+                    <div className="notifiications mr-2">
                         <svg
                             aria-label="Notifications"
                             class="x1lliihq x1n2onr6"
@@ -239,7 +239,7 @@ export const SideNavbar = () => {
                     <p className="md:hidden">Notification</p>
                 </li>
                 <li className="flex">
-                    <div className="create">
+                    <div className="create mr-2">
                         <svg
                             aria-label="New post"
                             class="_ab6-"
@@ -336,7 +336,7 @@ export const SideNavbar = () => {
                             ></line>
                         </svg>
                     </div>
-                    <p className="md:hidden">More</p>
+                    <p className="md:hidden mr-2">More</p>
                 </li>
             </ul>
         </div>

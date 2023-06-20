@@ -9,7 +9,7 @@ export const InstagramFeed = () => {
             <Header />
             <div className="flex">
                 <SideNavbar />
-                <div className="">
+                <div className="w-full">
                     <StoriesBar />
                     <InstaPosts />
                 </div>

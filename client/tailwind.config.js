@@ -4,12 +4,11 @@ export default {
     theme: {
         extend: {},
         screens: {
-            sm: { max: "320px" },
+            xs: { max: "320px" },
+            sm: { max: "481px" },
             // => @media (max-width: 320px) { ... }
-
             md: { max: "781px" },
             // => @media (max-width: 781px) { ... }
-
             lg: { max: "1181px" },
             // => @media (max-width: 1281px) { ... }
         },

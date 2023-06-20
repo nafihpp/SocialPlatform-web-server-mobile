@@ -3,7 +3,7 @@ export const SideNavbar = () => {
         <div className="max-w-[200px] text-black w-[500px] border-r-[1px] border-[#dbdbdb]">
             <ul className=" flex flex-col justify-center gap-7 cursor-pointer w-[90%] mx-auto ">
                 <li className="my-5 text-left">
-                    <div className="logo-text-image">
+                    <div className="logo-text-image md:hidden">
                         <svg
                             aria-label="Instagram"
                             class="_ab6-"
@@ -22,7 +22,7 @@ export const SideNavbar = () => {
                             ></path>
                         </svg>
                     </div>
-                    <div className="logo-image">
+                    <div className="logo-image hidden md:block">
                         <svg
                             aria-label="Instagram"
                             class="x1lliihq x1n2onr6"

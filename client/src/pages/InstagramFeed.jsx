@@ -10,7 +10,7 @@ export const InstagramFeed = () => {
             <Header />
             <div className="flex overflow-hidden">
                 <SideNavbar />
-                <div className="w-full">
+                <div className="w-full overflow-hidden">
                     <StoriesBar />
                     <InstaPosts />
                 </div>

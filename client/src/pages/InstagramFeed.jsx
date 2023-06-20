@@ -8,7 +8,7 @@ export const InstagramFeed = () => {
     return (
         <div className="max-h-screen w-[100%]">
             <Header />
-            <div className="flex">
+            <div className="flex overflow-hidden">
                 <SideNavbar />
                 <div className="w-full">
                     <StoriesBar />

@@ -336,7 +336,7 @@ export const SideNavbar = () => {
                             ></line>
                         </svg>
                     </div>
-                    <p className="md:hidden mr-2">More</p>
+                    <p className="md:hidden ">More</p>
                 </li>
             </ul>
         </div>

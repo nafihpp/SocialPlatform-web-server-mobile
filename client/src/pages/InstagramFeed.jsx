@@ -1,4 +1,3 @@
-import React, { Fragment } from "react";
 import { SideNavbar } from "../components/SideNavbar";
 import { InstaPosts } from "../components/InstaPosts";
 import { StoriesBar } from "../components/StoriesBar";
@@ -8,9 +7,9 @@ export const InstagramFeed = () => {
     return (
         <div className="max-h-screen w-[100%]">
             <Header />
-            <div className="flex overflow-hidden">
+            <div className="flex">
                 <SideNavbar />
-                <div className="w-full overflow-hidden">
+                <div className="w-full">
                     <StoriesBar />
                     <InstaPosts />
                 </div>

@@ -2,8 +2,8 @@ import React from "react";
 
 export const Header = () => {
     return (
-        <div className="flex justify-between items-center mx-auto w-[90%] min-h-[50px] ">
-            <div className="left-container">
+        <div className="flex justify-between items-center mx-auto w-[95%] min-h-[50px] ">
+            <div className="left-container mr-1">
                 <div className="logo">
                     <svg
                         aria-label="Instagram"
@@ -24,8 +24,8 @@ export const Header = () => {
                     </svg>
                 </div>
             </div>
-            <div className="right-container flex">
-                <div className="search-container border-[1px] mr-1">
+            <div className="right-container flex items-center">
+                <div className="search-container border-[1px] mr-1 rounded-sm">
                     <input
                         placeholder="Search"
                         type="text"

@@ -3,7 +3,7 @@ import { PostCard } from "../PostCard";
 
 export const InstaPosts = () => {
     return (
-        <div className=" h-[100vh - 162px] flex flex-col items-center w-[90%] mx-auto h-[calc(100vh-162px)] overflow-y-scroll">
+        <div className=" h-[100vh - 162px] flex flex-col items-center w-[90%] mx-auto">
             <PostCard />
             <PostCard />
             <PostCard />

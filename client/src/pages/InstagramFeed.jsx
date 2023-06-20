@@ -6,10 +6,12 @@ import { Header } from "../components/Header/Header";
 export const InstagramFeed = () => {
     return (
         <div className="max-h-screen w-[100%] overflow-hidden">
-            <Header />
+            <div className="hidden sm:block">
+                <Header />
+            </div>
             <div className="flex">
                 <SideNavbar />
-                <div className="w-full">
+                <div className="w-full h-[calc(100vh-52px)] overflow-y-scroll">
                     <StoriesBar />
                     <InstaPosts />
                 </div>

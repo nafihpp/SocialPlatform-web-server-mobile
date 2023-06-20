@@ -1,6 +1,6 @@
 export const SideNavbar = () => {
     return (
-        <div className="max-w-[200px] text-black w-[500px] border-r-[1px] border-[#dbdbdb] md:min-w-[40px] ">
+        <div className="max-w-[200px] text-black w-[500px] border-r-[1px] border-[#dbdbdb] md:min-w-[40px] sm:hidden">
             <ul className=" flex flex-col justify-center gap-7 cursor-pointer w-[90%] mx-auto ">
                 <li className="my-5 text-left">
                     <div className="logo-text-image md:hidden">

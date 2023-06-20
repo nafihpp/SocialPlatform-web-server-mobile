@@ -5,7 +5,7 @@ import { Header } from "../components/Header/Header";
 
 export const InstagramFeed = () => {
     return (
-        <div className="max-h-screen w-[100%]">
+        <div className="max-h-screen w-[100%] overflow-hidden">
             <Header />
             <div className="flex">
                 <SideNavbar />

@@ -30,12 +30,12 @@ export const PostCard = ({ image }) => {
                 <div className="mt-5 border-b rounded-sm mb-2">
                     <div className="top flex justify-between">
                         <div className="profile-pic-container flex">
-                            <div className="bg-gradient-to-tr from-yellow-500 to-fuchsia-600 rounded-full cursor-pointer w-[70px] h-[50px] flex items-center justify-center">
-                                <a className="profile-pic-img border-[2px] border-[#fff] overflow-hidden rounded-[50%]">
+                            <div className="bg-gradient-to-tr from-yellow-500 to-fuchsia-600 rounded-full cursor-pointer w-[61px] h-[61px] flex items-center justify-center">
+                                <a className="">
                                     <img
                                         src={image}
-                                        className="block w-[100%]"
                                         style={{ objectFit: "cover" }}
+                                        className="rounded-[50%] w-14 h-14 border-[3px] border-[#fff]"
                                     />
                                 </a>
                             </div>

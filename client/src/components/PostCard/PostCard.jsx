@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 
 export const PostCard = ({ image }) => {
+    const inititalContent =
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae, totam eos nihil optio veniam, nam enim quo repellat aperiam asperiores praesentium sint voluptatem ullam dicta ipsa? Consectetur facere dignissimos eos praesentium, error dolorem, neque est, beatae voluptatibus tenetur maxime?";
+    const [showMore, setShowMore] = useState(false);
+    const maxVisibleChars = 30;
+
+    const truncatedContent = inititalContent.slice(0, maxVisibleChars);
+    const remainingContent = inititalContent.slice(maxVisibleChars);
+
+    const handleShowMore = () => {
+        setShowMore(!showMore);
+    };
+
     return (
         <div className="w-[90%]">
             <div className="mt-5 border-b rounded-sm w-[400px] mb-2">
@@ -15,8 +27,13 @@ export const PostCard = ({ image }) => {
                                 />
                             </div>
                         </div>
-                        <div className="name flex items-center ml-3">
-                            dr.heba_youshra
+                        <div className="name flex flex-col ml-3">
+                            <div>
+                                <strong>dr.heba_youshra</strong>
+                            </div>
+                            <div>
+                                <p>Guruvyoor Temple, Thrissur</p>
+                            </div>
                         </div>
                     </div>
                     <div className="options font-bold">...</div>
@@ -121,6 +138,46 @@ export const PostCard = ({ image }) => {
                                 ></polygon>
                             </svg>
                         </span>
+                    </div>
+                </div>
+                <div>
+                    <span>Liked by</span>
+                    &nbsp;
+                    <strong>niss</strong>
+                    &nbsp;
+                    <span>and</span>
+                    &nbsp;
+                    <strong>others</strong>
+                </div>
+                <div>
+                    <span className="font-semibold">dr.heba_youshra</span>{" "}
+                    &nbsp;
+                    <span>{truncatedContent}</span>
+                    {showMore ? (
+                        <div>
+                            {remainingContent}
+                            <button
+                                onClick={handleShowMore}
+                                className="text-blue-500 font-medium"
+                            >
+                                Show less
+                            </button>
+                        </div>
+                    ) : (
+                        <div>
+                            {remainingContent.length > 0 && "... "}
+                            <button
+                                onClick={handleShowMore}
+                                className="text-blue-500 font-medium"
+                            >
+                                more
+                            </button>
+                        </div>
+                    )}
+                    <span className="font-medium text-xs">See Translation</span>
+                    <p>View 1 Comment</p>
+                    <div>
+                        <input placeholder="Comment" type="text" />
                     </div>
                 </div>
             </div>

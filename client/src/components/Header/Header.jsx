@@ -2,7 +2,7 @@ import React from "react";
 
 export const Header = () => {
     return (
-        <div className="flex justify-between items-center mx-auto w-[95%] min-h-[50px] ">
+        <div className="flex justify-between items-center mx-auto w-[95%] min-h-[55px]">
             <div className="left-container mr-1">
                 <div className="logo">
                     <svg

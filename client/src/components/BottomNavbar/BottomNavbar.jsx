@@ -1,4 +1,5 @@
-import Profile from "../../assets/profile.jpg";
+import Profile from "../../assets/Profile.jpg";
+
 export const BottomNavbar = () => {
     return (
         <div className="hidden ok sm:flex sm:items-center w-[100%] h-[50px] bg-[#fff] absolute bottom-0">

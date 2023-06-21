@@ -7,7 +7,7 @@ import { BottomNavbar } from "../../components/BottomNavbar";
 export const InstagramFeed = () => {
     return (
         <div className="max-h-screen w-[100%] overflow-hidden">
-            <div className="hidden sm:block border-b-[1px] border-[#dbdbdb]">
+            <div className="hidden ok sm:block border-b-[1px] border-[#dbdbdb]">
                 <Header />
             </div>
             <div className="flex">

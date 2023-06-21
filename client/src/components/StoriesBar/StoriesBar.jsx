@@ -3,7 +3,7 @@ import { StoryCard } from "../StoryCard";
 
 export const StoriesBar = () => {
     return (
-        <div className="h-28 flex justify-between items-center overflow-x-auto bg-[#fafafa] border-t-1 border-b overflow-y-hidden">
+        <div className="h-[119px] flex justify-between items-center overflow-x-auto bg-[#fafafa] border-t-1 border-b overflow-y-hidden">
             <StoryCard
                 image={
                     "https://cdn.pixabay.com/photo/2014/10/31/17/41/dancing-dave-minion-510835_1280.jpg"

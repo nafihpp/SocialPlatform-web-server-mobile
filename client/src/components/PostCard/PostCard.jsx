@@ -2,8 +2,8 @@ import React from "react";
 
 export const PostCard = ({ image }) => {
     return (
-        <div className="w-[100%]">
-            <div className="mt-5 border-b p-2 rounded-sm w-[400px] mb-2">
+        <div className="w-[90%]">
+            <div className="mt-5 border-b rounded-sm w-[400px] mb-2">
                 <div className="top flex justify-between">
                     <div className="profile-pic-container flex">
                         <div className="bg-gradient-to-tr from-yellow-500 to-fuchsia-600">
@@ -21,14 +21,14 @@ export const PostCard = ({ image }) => {
                     </div>
                     <div className="options font-bold">...</div>
                 </div>
-                <div className="middle my-3">
+                <div className="middle my-3 w-[100%]">
                     <img
                         src={image}
                         className="block w-[100%]"
                         style={{ objectFit: "fill" }}
                     />
                 </div>
-                <div className="bottom flex justify-between">
+                <div className="bottom flex justify-between mb-5">
                     <div className="bottom-actions flex">
                         <span className="love mr-3">
                             <svg

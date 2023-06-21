@@ -288,7 +288,11 @@ export const SideNavbar = () => {
                 </li>
                 <li className="flex items-center">
                     <div className="profile mr-2">
-                        <img src={profile} className="w-9 h-9 rounded-full" />
+                        <img
+                            src={profile}
+                            className="w-9 h-9 rounded-full"
+                            style={{ objectFit: "cover" }}
+                        />
                     </div>
                     <p className="md:hidden">Profile</p>
                 </li>

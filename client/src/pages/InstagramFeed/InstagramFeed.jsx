@@ -14,6 +14,7 @@ export const InstagramFeed = () => {
                 <SideNavbar />
                 <div className="w-full h-[calc(100vh-52px)] overflow-y-scroll">
                     <StoriesBar />
+
                     <InstaPosts />
                 </div>
             </div>

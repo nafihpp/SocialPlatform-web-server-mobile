@@ -4,51 +4,6 @@ import React, { useState } from "react";
 export const PostCard = ({ image }) => {
     const [loading, setLoading] = useState(false);
 
-    if (loading) {
-        return (
-            <div className="w-[400px]">
-                <div className="w-[90%] mx-auto">
-                    <div className="top ">
-                        <div className="profile-pic-container flex">
-                            <div className="">
-                                <Skeleton
-                                    variant="circle"
-                                    animation="wave"
-                                    width={50}
-                                    height={50}
-                                    className="rounded-full mb-3 mr-4"
-                                />
-                            </div>
-                            <div className="name">
-                                <div>
-                                    <Skeleton
-                                        variant="text"
-                                        animation="wave"
-                                        className=" mb-3"
-                                        width={200}
-                                    />
-                                    <Skeleton
-                                        variant="text"
-                                        animation="wave"
-                                        className=" mb-3"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="middle my-3 w-[100%]">
-                        <Skeleton
-                            variant="rectangular"
-                            animation="wave"
-                            width={400}
-                            height={322}
-                        />
-                    </div>
-                </div>
-            </div>
-        );
-    }
-
     const inititalContent =
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae, totam eos nihil optio veniam, nam enim quo repellat aperiam asperiores praesentium sint voluptatem ullam dicta ipsa? Consectetur facere dignissimos eos praesentium, error dolorem, neque est, beatae voluptatibus tenetur maxime?";
     const [showMore, setShowMore] = useState(false);
@@ -62,7 +17,7 @@ export const PostCard = ({ image }) => {
     };
 
     return (
-        <div className="width-[400px]">
+        <div className="width-[100%]">
             <div className="w-[90%]">
                 <div className="mt-5 border-b rounded-sm mb-2">
                     <div className="top flex justify-between">
@@ -71,7 +26,7 @@ export const PostCard = ({ image }) => {
                                 <a className="profile-pic-img border-[2px] border-[#fff] overflow-hidden rounded-[50%]">
                                     <img
                                         src={image}
-                                        className="block width-[100%] max-h-[150px]"
+                                        className="block w-[100%]"
                                         style={{ objectFit: "cover" }}
                                     />
                                 </a>
@@ -87,10 +42,10 @@ export const PostCard = ({ image }) => {
                         </div>
                         <div className="options font-bold">...</div>
                     </div>
-                    <div className="middle my-3 w-[100%]">
+                    <div className="middle my-3">
                         <img
                             src={image}
-                            className="block w-[100%]"
+                            className="block w-[100%] max-h-[500px]"
                             style={{ objectFit: "fill" }}
                         />
                     </div>
@@ -238,3 +193,50 @@ export const PostCard = ({ image }) => {
         </div>
     );
 };
+
+//loading
+
+// if (loading) {
+//     return (
+//         <div className="w-[100%]">
+//             <div className="w-[90%] mx-auto">
+//                 <div className="top ">
+//                     <div className="profile-pic-container flex">
+//                         <div className="">
+//                             <Skeleton
+//                                 variant="circle"
+//                                 animation="wave"
+//                                 width={50}
+//                                 height={50}
+//                                 className="rounded-full mb-3 mr-4"
+//                             />
+//                         </div>
+//                         <div className="name">
+//                             <div>
+//                                 <Skeleton
+//                                     variant="text"
+//                                     animation="wave"
+//                                     className=" mb-3"
+//                                     width={200}
+//                                 />
+//                                 <Skeleton
+//                                     variant="text"
+//                                     animation="wave"
+//                                     className=" mb-3"
+//                                 />
+//                             </div>
+//                         </div>
+//                     </div>
+//                 </div>
+//                 <div className="middle my-3 w-[100%]">
+//                     <Skeleton
+//                         variant="rectangular"
+//                         animation="wave"
+//                         width={400}
+//                         height={322}
+//                     />
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// }

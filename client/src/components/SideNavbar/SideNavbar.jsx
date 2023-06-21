@@ -297,7 +297,7 @@ export const SideNavbar = () => {
                     <p className="md:hidden">Profile</p>
                 </li>
                 <li className="mt-10 flex">
-                    <div className="more">
+                    <div className="more mr-2">
                         <svg
                             aria-label="Settings"
                             class="_ab6-"

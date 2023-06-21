@@ -17,7 +17,7 @@ export const InstagramFeed = () => {
                     <InstaPosts />
                 </div>
             </div>
-            <div className="bottom-navbar absolute bottom-0 w-[100%]">
+            <div className="bottom-navbar absolute bottom-0 left-0 w-[100%]">
                 <BottomNavbar />
             </div>
         </div>

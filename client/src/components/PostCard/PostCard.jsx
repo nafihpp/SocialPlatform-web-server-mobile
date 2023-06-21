@@ -26,7 +26,7 @@ export const PostCard = ({ image }) => {
 
     return (
         <div className="width-[100%] md:width-[98%] md:mx-auto">
-            <div className="w-[90%]">
+            <div className="w-[100%]">
                 <div className="mt-5 border-b rounded-sm mb-2">
                     <div className="top flex justify-between">
                         <div className="profile-pic-container flex">
@@ -51,11 +51,7 @@ export const PostCard = ({ image }) => {
                         <div className="options font-bold">...</div>
                     </div>
                     <div className="middle my-3">
-                        <img
-                            src={image}
-                            className="block w-[100%] max-h-[500px]"
-                            style={{ objectFit: "fill" }}
-                        />
+                        <img src={image} style={{ objectFit: "fill" }} />
                     </div>
                     <div className="bottom flex justify-between mb-5">
                         <div className="bottom-actions flex">

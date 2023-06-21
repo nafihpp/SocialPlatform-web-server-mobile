@@ -3,7 +3,7 @@ import { PostCard } from "../PostCard";
 
 export const InstaPosts = () => {
     return (
-        <div className=" h-[100vh - 162px] flex flex-col w-[60%] md:w-[98%] pl-7 md:mx-auto md:pl-3">
+        <div className=" h-[100vh - 162px] flex flex-col w-[40%] md:w-[100%] mx-auto">
             <PostCard
                 image={
                     "https://cdn.pixabay.com/photo/2014/10/31/17/41/dancing-dave-minion-510835_1280.jpg"

@@ -1,10 +1,58 @@
+import { Skeleton } from "@mui/material";
 import React, { useState } from "react";
 
 export const PostCard = ({ image }) => {
+    const [loading, setLoading] = useState(false);
+
+    if (loading) {
+        return (
+            <div className="w-[400px]">
+                <div className="w-[90%] mx-auto">
+                    <div className="top ">
+                        <div className="profile-pic-container flex">
+                            <div className="">
+                                <Skeleton
+                                    variant="circle"
+                                    animation="wave"
+                                    width={50}
+                                    height={50}
+                                    className="rounded-full mb-3 mr-4"
+                                />
+                            </div>
+                            <div className="name">
+                                <div>
+                                    <Skeleton
+                                        variant="text"
+                                        animation="wave"
+                                        className=" mb-3"
+                                        width={200}
+                                    />
+                                    <Skeleton
+                                        variant="text"
+                                        animation="wave"
+                                        className=" mb-3"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="middle my-3 w-[100%]">
+                        <Skeleton
+                            variant="rectangular"
+                            animation="wave"
+                            width={400}
+                            height={322}
+                        />
+                    </div>
+                </div>
+            </div>
+        );
+    }
+
     const inititalContent =
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae, totam eos nihil optio veniam, nam enim quo repellat aperiam asperiores praesentium sint voluptatem ullam dicta ipsa? Consectetur facere dignissimos eos praesentium, error dolorem, neque est, beatae voluptatibus tenetur maxime?";
     const [showMore, setShowMore] = useState(false);
-    const maxVisibleChars = 30;
+    const maxVisibleChars = 80;
 
     const truncatedContent = inititalContent.slice(0, maxVisibleChars);
     const remainingContent = inititalContent.slice(maxVisibleChars);
@@ -18,14 +66,14 @@ export const PostCard = ({ image }) => {
             <div className="mt-5 border-b rounded-sm w-[400px] mb-2">
                 <div className="top flex justify-between">
                     <div className="profile-pic-container flex">
-                        <div className="bg-gradient-to-tr from-yellow-500 to-fuchsia-600">
-                            <div className="profile-pic-img border-[2px] border-[#fff] overflow-hidden rounded-[50%] w-10 h-10">
+                        <div className="bg-gradient-to-tr from-yellow-500 to-fuchsia-600 rounded-full cursor-pointer w-[70px] h-[50px] flex items-center justify-center">
+                            <a className="profile-pic-img border-[2px] border-[#fff] overflow-hidden rounded-[50%]">
                                 <img
                                     src={image}
-                                    className="w-10 h-10"
+                                    className="block width-[100%]"
                                     style={{ objectFit: "cover" }}
                                 />
-                            </div>
+                            </a>
                         </div>
                         <div className="name flex flex-col ml-3">
                             <div>
@@ -152,7 +200,10 @@ export const PostCard = ({ image }) => {
                 <div>
                     <span className="font-semibold">dr.heba_youshra</span>{" "}
                     &nbsp;
-                    <span>{truncatedContent}</span>
+                    <span>
+                        {truncatedContent}{" "}
+                        {remainingContent.length > 0 && "... "}
+                    </span>
                     {showMore ? (
                         <div>
                             {remainingContent}
@@ -160,15 +211,14 @@ export const PostCard = ({ image }) => {
                                 onClick={handleShowMore}
                                 className="text-blue-500 font-medium"
                             >
-                                Show less
+                                ShowLess
                             </button>
                         </div>
                     ) : (
                         <div>
-                            {remainingContent.length > 0 && "... "}
                             <button
                                 onClick={handleShowMore}
-                                className="text-blue-500 font-medium"
+                                className="text-[#8a738a] font-normal"
                             >
                                 more
                             </button>

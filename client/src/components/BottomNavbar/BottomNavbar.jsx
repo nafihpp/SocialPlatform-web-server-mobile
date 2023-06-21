@@ -1,12 +1,17 @@
 import Profile from "../../assets/Profile.jpg";
 
 export const BottomNavbar = () => {
+    const BottomNavbar = [
+        { id: 1, TabIcon: "", activeTabIcon: "" },
+        { id: 2, TabIcon: "", activeTabIcon: "" },
+        { id: 3, TabIcon: "", activeTabIcon: "" },
+    ];
     return (
-        <div className="hidden ok sm:flex sm:items-center w-[100%] h-[50px] bg-[#fff] absolute bottom-0">
+        <div className="hidden ok sm:flex sm:items-center w-[100%] h-[50px] bg-[#fff] ">
             <div className="w-[90%] mx-auto">
                 <ul className="flex justify-between items-center">
                     <li>
-                        <div>
+                        <div className="">
                             <svg
                                 stroke="currentColor"
                                 fill="currentColor"

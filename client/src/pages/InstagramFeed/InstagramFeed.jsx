@@ -6,7 +6,7 @@ import { BottomNavbar } from "../../components/BottomNavbar";
 
 export const InstagramFeed = () => {
     return (
-        <div className="max-h-screen w-[100%] overflow-hidden ok">
+        <div className="max-h-screen w-[100%] overflow-hidden relative">
             <div className="hidden ok sm:block border-b-[1px] border-[#dbdbdb]">
                 <Header />
             </div>
@@ -17,7 +17,7 @@ export const InstagramFeed = () => {
                     <InstaPosts />
                 </div>
             </div>
-            <div className="bottom-navbar">
+            <div className="bottom-navbar absolute bottom-0 w-[100%]">
                 <BottomNavbar />
             </div>
         </div>

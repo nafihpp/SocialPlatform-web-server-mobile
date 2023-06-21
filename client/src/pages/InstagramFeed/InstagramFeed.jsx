@@ -6,7 +6,7 @@ import { BottomNavbar } from "../../components/BottomNavbar";
 
 export const InstagramFeed = () => {
     return (
-        <div className="max-h-screen w-[100%] overflow-hidden relative">
+        <div className="max-h-screen w-[100%] overflow-hidden">
             <div className="hidden ok sm:block border-b-[1px] border-[#dbdbdb]">
                 <Header />
             </div>
@@ -14,11 +14,10 @@ export const InstagramFeed = () => {
                 <SideNavbar />
                 <div className="w-full h-[calc(100vh-52px)] overflow-y-scroll">
                     <StoriesBar />
-
                     <InstaPosts />
                 </div>
             </div>
-            <div className="bottom-navbar absolute bottom-0 left-0 w-[100%]">
+            <div className="absolute bottom-0 w-full hidden sm:block">
                 <BottomNavbar />
             </div>
         </div>

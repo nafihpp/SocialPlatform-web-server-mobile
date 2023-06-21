@@ -1,8 +1,16 @@
 import { Skeleton } from "@mui/material";
+import { Picker } from "emoji-mart";
 import React, { useState } from "react";
 
 export const PostCard = ({ image }) => {
     const [loading, setLoading] = useState(false);
+    const [showPicker, setShowPicker] = useState(false);
+    const [comment, setComment] = useState("");
+
+    const handleEmojiSelect = (emoji) => {
+        const newComment = comment + emoji.native;
+        setComment(newComment);
+    };
 
     const inititalContent =
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed beatae, totam eos nihil optio veniam, nam enim quo repellat aperiam asperiores praesentium sint voluptatem ullam dicta ipsa? Consectetur facere dignissimos eos praesentium, error dolorem, neque est, beatae voluptatibus tenetur maxime?";
@@ -17,7 +25,7 @@ export const PostCard = ({ image }) => {
     };
 
     return (
-        <div className="width-[100%]">
+        <div className="width-[100%] md:width-[98%] md:mx-auto">
             <div className="w-[90%]">
                 <div className="mt-5 border-b rounded-sm mb-2">
                     <div className="top flex justify-between">
@@ -184,8 +192,28 @@ export const PostCard = ({ image }) => {
                             See Translation
                         </span>
                         <p>View 1 Comment</p>
-                        <div>
-                            <input placeholder="Comment" type="text" />
+                        <div className="relative">
+                            <input
+                                placeholder="Comment"
+                                type="text"
+                                className="outline-none w-[100%]"
+                            />
+                            <button
+                                className="absolute right-0 top-0 p-2"
+                                onClick={() => setShowPicker(!showPicker)}
+                            >
+                                😃
+                            </button>
+                            {showPicker && (
+                                <Picker
+                                    onSelect={handleEmojiSelect}
+                                    style={{
+                                        position: "absolute",
+                                        bottom: "100%",
+                                        right: 0,
+                                    }}
+                                />
+                            )}
                         </div>
                     </div>
                 </div>

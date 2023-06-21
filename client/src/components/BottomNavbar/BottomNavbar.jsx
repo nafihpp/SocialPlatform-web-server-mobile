@@ -7,10 +7,10 @@ export const BottomNavbar = () => {
         { id: 3, TabIcon: "", activeTabIcon: "" },
     ];
     return (
-        <div className="hidden sm:flex sm:items-center w-[100%] h-[50px] bg-[#fff] ">
+        <div className="w-[100%] h-[50px] items-center bg-[#fff] hidden sm:flex">
             <div className="w-[90%] mx-auto">
                 <ul className="flex justify-between items-center">
-                    <li>
+                    <li className="flex-shrink-0">
                         <div className="">
                             <svg
                                 stroke="currentColor"
@@ -25,7 +25,7 @@ export const BottomNavbar = () => {
                             </svg>
                         </div>
                     </li>
-                    <li>
+                    <li className="flex-shrink-0">
                         <div>
                             <svg
                                 stroke="currentColor"
@@ -40,7 +40,7 @@ export const BottomNavbar = () => {
                             </svg>
                         </div>
                     </li>
-                    <li>
+                    <li className="flex-shrink-0">
                         <div>
                             <svg
                                 aria-label="Explore"
@@ -77,7 +77,7 @@ export const BottomNavbar = () => {
                             </svg>
                         </div>
                     </li>
-                    <li>
+                    <li className="flex-shrink-0">
                         <div>
                             <svg
                                 aria-label="New post"
@@ -122,7 +122,7 @@ export const BottomNavbar = () => {
                             </svg>
                         </div>
                     </li>
-                    <li>
+                    <li className="flex-shrink-0">
                         <div>
                             <svg
                                 aria-label="Messenger"
@@ -148,7 +148,7 @@ export const BottomNavbar = () => {
                             </svg>
                         </div>
                     </li>
-                    <li>
+                    <li className="flex-shrink-0">
                         <div>
                             <img
                                 src={Profile}

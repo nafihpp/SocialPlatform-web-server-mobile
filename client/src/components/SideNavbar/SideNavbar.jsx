@@ -3,7 +3,7 @@ import profile from "../../assets/Profile.jpg";
 export const SideNavbar = () => {
     return (
         <div className="max-w-[200px] text-black w-[500px] border-r-[1px] border-[#dbdbdb] md:min-w-[40px] md:max-w-[40px] sm:hidden">
-            <ul className=" flex flex-col justify-center gap-7 cursor-pointer w-[90%] mx-auto ">
+            <ul className=" flex flex-col justify-center gap-7 cursor-pointer w-[90%] mx-auto md:items-center">
                 <li className="my-5 text-left">
                     <div className="logo-text-image md:hidden">
                         <svg
@@ -40,7 +40,7 @@ export const SideNavbar = () => {
                     </div>
                 </li>
                 <li className="flex">
-                    <div className="home mr-2">
+                    <div className="home mr-2 md:mr-0">
                         <svg
                             aria-label="Home"
                             class="_ab6-"
@@ -63,7 +63,7 @@ export const SideNavbar = () => {
                     <p className="text-left md:hidden">Home</p>
                 </li>
                 <li className="flex">
-                    <div className="search mr-2">
+                    <div className="search mr-2 md:mr-0">
                         <svg
                             aria-label="Search"
                             class="_ab6-"
@@ -98,7 +98,7 @@ export const SideNavbar = () => {
                     <p className="md:hidden">Search</p>
                 </li>
                 <li className="flex">
-                    <div className="explore mr-2">
+                    <div className="explore mr-2 md:mr-0">
                         <svg
                             aria-label="Explore"
                             class="_ab6-"
@@ -136,7 +136,7 @@ export const SideNavbar = () => {
                     <p className="text-left md:hidden">Explore</p>
                 </li>
                 <li className="flex">
-                    <div className="reels mr-2">
+                    <div className="reels mr-2 md:mr-0">
                         <svg
                             aria-label="Reels"
                             class="_ab6-"
@@ -196,7 +196,7 @@ export const SideNavbar = () => {
                     <p className="md:hidden">Reels</p>
                 </li>
                 <li className="flex">
-                    <div className="messages mr-2">
+                    <div className="messages mr-2 md:mr-0">
                         <svg
                             aria-label="Messenger"
                             class="_ab6-"
@@ -223,7 +223,7 @@ export const SideNavbar = () => {
                     <p className="md:hidden">Messages</p>
                 </li>
                 <li className="flex">
-                    <div className="notifiications mr-2">
+                    <div className="notifiications mr-2 md:mr-0">
                         <svg
                             aria-label="Notifications"
                             class="x1lliihq x1n2onr6"
@@ -241,7 +241,7 @@ export const SideNavbar = () => {
                     <p className="md:hidden">Notification</p>
                 </li>
                 <li className="flex">
-                    <div className="create mr-2">
+                    <div className="create mr-2 md:mr-0">
                         <svg
                             aria-label="New post"
                             class="_ab6-"
@@ -287,7 +287,7 @@ export const SideNavbar = () => {
                     <p className="md:hidden">Create</p>
                 </li>
                 <li className="flex items-center">
-                    <div className="profile mr-2">
+                    <div className="profile mr-2 md:mr-0">
                         <img
                             src={profile}
                             className="w-9 h-9 rounded-full"
@@ -297,7 +297,7 @@ export const SideNavbar = () => {
                     <p className="md:hidden">Profile</p>
                 </li>
                 <li className="mt-10 flex">
-                    <div className="more mr-2">
+                    <div className="more mr-2 md:mr-0">
                         <svg
                             aria-label="Settings"
                             class="_ab6-"

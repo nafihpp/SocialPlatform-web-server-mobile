@@ -1,3 +1,5 @@
+import profile from "../../assets/Profile.jpg";
+
 export const SideNavbar = () => {
     return (
         <div className="max-w-[200px] text-black w-[500px] border-r-[1px] border-[#dbdbdb] md:min-w-[40px] md:max-w-[40px] sm:hidden">
@@ -284,10 +286,11 @@ export const SideNavbar = () => {
                     </div>
                     <p className="md:hidden">Create</p>
                 </li>
-                <li className="flex">
-                    <div className="profile">
-                        <img src="https://scontent.cdninstagram.com/v/t51.2885-19/329249798_1316544368953441_6669491314714123868_n.jpg?stp=dst-jpg_s150x150&_nc_ht=scontent.cdninstagram.com&_nc_cat=101&_nc_ohc=wNvnCsCFS-sAX-JURnP&edm=APs17CUBAAAA&ccb=7-5&oh=00_AfBcABcCha0zaIXTyfs9pQPYdGiTz7icwHWkIW8SZxZm4w&oe=6495880F&_nc_sid=df044f" />
+                <li className="flex items-center">
+                    <div className="profile mr-2">
+                        <img src={profile} className="w-9 h-9 rounded-full" />
                     </div>
+                    <p className="md:hidden">Profile</p>
                 </li>
                 <li className="mt-10 flex">
                     <div className="more">

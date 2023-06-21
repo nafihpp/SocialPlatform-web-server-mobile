@@ -1,7 +1,7 @@
 import Profile from "../../assets/profile.jpg";
 export const BottomNavbar = () => {
     return (
-        <div className="hidden sm:flex sm:items-center w-[100%] h-[50px] bg-[#fff] absolute bottom-0">
+        <div className="hidden ok sm:flex sm:items-center w-[100%] h-[50px] bg-[#fff] absolute bottom-0">
             <div className="w-[90%] mx-auto">
                 <ul className="flex justify-between items-center">
                     <li>

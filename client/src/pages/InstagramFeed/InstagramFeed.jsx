@@ -13,13 +13,13 @@ export const InstagramFeed = () => {
             </div>
             <div className="flex">
                 <SideNavbar />
-                <div className="w-full h-[calc(100vh-52px)] overflow-y-scroll scroll-smooth no-scrollbar">
+                <div className="w-full h-[calc(100vh-52px)] overflow-y-scroll scroll-smooth no-scrollbar mt-5 md:mt-0 mx-7 md:mx-0">
                     <StoriesBar />
                     <InstaPosts />
                 </div>
-                {/* <div className="w-[10%]">
+                <div className="w-[30%] mt-24 md:hidden">
                     <SuggestionBar />
-                </div> */}
+                </div>
             </div>
             <div className="absolute bottom-0 w-full hidden sm:block">
                 <BottomNavbar />

@@ -1,3 +1,9 @@
+import { ProfileCard } from "../ProfileCard";
+
 export const SuggestionBar = () => {
-    return <div>SuggestionBar</div>;
+    return (
+        <div>
+            <ProfileCard />
+        </div>
+    );
 };

@@ -3,7 +3,7 @@ import { StoryCard } from "../StoryCard";
 
 export const StoriesBar = () => {
     return (
-        <div className="h-[150px] bg-[#fafafa] border-t-1 border-b overflow-y-hidden">
+        <div className="h-[150px] bg-[#fafafa] border-t-1 border-b overflow-y-hidden no-scrollbar scroll-smooth">
             <div className="py-5 flex justify-between items-center">
                 {" "}
                 <StoryCard

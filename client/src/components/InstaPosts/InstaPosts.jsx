@@ -1,7 +1,24 @@
 import React from "react";
 import { PostCard } from "../PostCard";
+import { useEffect } from "react";
 
-export const InstaPosts = () => {
+export const InstaPosts = ({ setHideDiv }) => {
+    useEffect(() => {
+        const handleScroll = () => {
+            console.log(window.scrollY);
+            if (window.scrollY > 100) {
+                setHideDiv(true);
+            } else {
+                setHideDiv(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     return (
         <div className=" h-[100vh - 162px] flex flex-col w-[50%] md:w-[98%] mx-auto ">
             <PostCard

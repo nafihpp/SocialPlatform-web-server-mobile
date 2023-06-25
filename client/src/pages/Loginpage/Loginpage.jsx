@@ -5,7 +5,7 @@ import appstore from "../../assets/appstore.png";
 
 export const Loginpage = () => {
     return (
-        <div className="flex h-[100vh] items-center justify-center md:flex-wrap md:w-[90%] md:justify-center md:mx-auto">
+        <div className="flex h-[100vh] items-center justify-center md:flex-wrap md:w-[90%] md:justify-center md:mx-auto rounded-sm">
             <div className="left-phone-image relative sm:hidden">
                 <img src={PhoneLeft} />
                 <div className="screens absolute top-[27px] right-[58px]">
@@ -49,10 +49,14 @@ export const Loginpage = () => {
                                 Log in
                             </button>
                         </div>
-                        <div className="">
-                            <hr className="border-t border-[#000]" />
-                            <div>OR</div>
-                            <hr className="border-t border-[#000]" />
+                        <div className="w-[90%] flex items-center my-5">
+                            <span className="w-[150px]">
+                                <hr className="border-t-2 border-[#000]" />
+                            </span>
+                            <span className="mx-[10px]">OR</span>
+                            <span className="w-[150px]">
+                                <hr className="border-t-2 border-[#000]" />
+                            </span>
                         </div>
                         <div>
                             <div className="mb-2">
@@ -74,21 +78,23 @@ export const Loginpage = () => {
                                 </button>
                             </div>
                             <div>
-                                <button className="cursor-pointer">
+                                <button className="cursor-pointer flex items-center">
                                     <span>
                                         <svg
                                             stroke="currentColor"
                                             fill="currentColor"
                                             stroke-width="0"
                                             viewBox="0 0 24 24"
-                                            height="1em"
-                                            width="1em"
+                                            height="20"
+                                            width="20"
                                             xmlns="http://www.w3.org/2000/svg"
                                         >
                                             <path d="m18.73 5.41-1.28 1L12 10.46 6.55 6.37l-1.28-1A2 2 0 0 0 2 7.05v11.59A1.36 1.36 0 0 0 3.36 20h3.19v-7.72L12 16.37l5.45-4.09V20h3.19A1.36 1.36 0 0 0 22 18.64V7.05a2 2 0 0 0-3.27-1.64z"></path>
                                         </svg>
                                     </span>
-                                    <span>Log in with Gmail</span>
+                                    <span className="ml-1">
+                                        Log in with Gmail
+                                    </span>
                                 </button>
                             </div>
                         </div>

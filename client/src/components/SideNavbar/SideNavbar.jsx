@@ -39,7 +39,7 @@ export const SideNavbar = () => {
                         </svg>
                     </div>
                 </li>
-                <li className="flex">
+                <li className="flex hover:bg-[#f2f2f2] p-[9px] rounded-sm">
                     <div className="home mr-2 md:mr-0">
                         <svg
                             aria-label="Home"
@@ -62,7 +62,7 @@ export const SideNavbar = () => {
                     </div>
                     <p className="text-left md:hidden">Home</p>
                 </li>
-                <li className="flex">
+                <li className="flex hover:bg-[#f2f2f2] p-[9px] rounded-sm">
                     <div className="search mr-2 md:mr-0">
                         <svg
                             aria-label="Search"
@@ -97,7 +97,7 @@ export const SideNavbar = () => {
                     </div>
                     <p className="md:hidden">Search</p>
                 </li>
-                <li className="flex">
+                <li className="flex hover:bg-[#f2f2f2] p-[9px] rounded-sm">
                     <div className="explore mr-2 md:mr-0">
                         <svg
                             aria-label="Explore"
@@ -135,7 +135,7 @@ export const SideNavbar = () => {
                     </div>
                     <p className="text-left md:hidden">Explore</p>
                 </li>
-                <li className="flex">
+                <li className="flex hover:bg-[#f2f2f2] p-[9px] rounded-sm">
                     <div className="reels mr-2 md:mr-0">
                         <svg
                             aria-label="Reels"
@@ -195,7 +195,7 @@ export const SideNavbar = () => {
                     </div>
                     <p className="md:hidden">Reels</p>
                 </li>
-                <li className="flex">
+                <li className="flex hover:bg-[#f2f2f2] p-[9px] rounded-sm">
                     <div className="messages mr-2 md:mr-0">
                         <svg
                             aria-label="Messenger"
@@ -222,7 +222,7 @@ export const SideNavbar = () => {
                     </div>
                     <p className="md:hidden">Messages</p>
                 </li>
-                <li className="flex">
+                <li className="flex hover:bg-[#f2f2f2] p-[9px] rounded-sm">
                     <div className="notifiications mr-2 md:mr-0">
                         <svg
                             aria-label="Notifications"
@@ -240,7 +240,7 @@ export const SideNavbar = () => {
                     </div>
                     <p className="md:hidden">Notification</p>
                 </li>
-                <li className="flex">
+                <li className="flex hover:bg-[#f2f2f2] p-[9px] rounded-sm">
                     <div className="create mr-2 md:mr-0">
                         <svg
                             aria-label="New post"
@@ -286,7 +286,7 @@ export const SideNavbar = () => {
                     </div>
                     <p className="md:hidden">Create</p>
                 </li>
-                <li className="flex items-center">
+                <li className="flex items-center hover:bg-[#f2f2f2] p-[9px] rounded-sm">
                     <div className="profile mr-2 md:mr-0">
                         <img
                             src={profile}
@@ -296,7 +296,7 @@ export const SideNavbar = () => {
                     </div>
                     <p className="md:hidden">Profile</p>
                 </li>
-                <li className="mt-10 flex">
+                <li className="mt-6 flex hover:bg-[#f2f2f2] p-[9px] rounded-sm">
                     <div className="more mr-2 md:mr-0">
                         <svg
                             aria-label="Settings"

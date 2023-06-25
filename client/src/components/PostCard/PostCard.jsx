@@ -51,7 +51,11 @@ export const PostCard = ({ image }) => {
                         <div className="options font-bold">...</div>
                     </div>
                     <div className="middle my-3">
-                        <img src={image} style={{ objectFit: "fill" }} />
+                        <img
+                            src={image}
+                            style={{ objectFit: "fill" }}
+                            className="rounded-sm"
+                        />
                     </div>
                     <div className="bottom flex justify-between mb-5">
                         <div className="bottom-actions flex">

@@ -2,7 +2,7 @@ import { SideNavbar } from "../../components/SideNavbar";
 import { InstaPosts } from "../../components/InstaPosts";
 import { StoriesBar } from "../../components/StoriesBar";
 import { Header } from "../../components/Header/Header";
-import { BottomNavbar } from "../../components/BottomNavbar";
+// import { BottomNavbar } from "../../components/BottomNavbar";
 import { SuggestionBar } from "../../components/SuggestionBar/SuggestionBar";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -51,7 +51,7 @@ export const InstagramFeed = () => {
                 )}
             </div>
             <div className="absolute bottom-0 w-full hidden sm:block">
-                <BottomNavbar />
+{/*                 <BottomNavbar /> */}
             </div>
         </div>
     );

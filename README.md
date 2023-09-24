@@ -1,6 +1,6 @@
 # SocialMedia-FullStack
 
 ## Tech Stack (under Progress)
-- Web - React JS 
-- Server - Node Express JS + MongoDB
-- Mobile Application - React-Native
+- Web -> React JS + Tailwind CSS 
+- Server -> Node Express JS + MongoDB + Passport JS
+- Mobile Application -> React-Native

@@ -1,6 +1,6 @@
 # SocialMedia-FullStack
 
 ## Tech Stack (under Progress)
-- Web -> React JS + Tailwind CSS 
-- Server -> Node Express JS + MongoDB + Passport JS
-- Mobile Application -> React-Native
+- Web -> Next JS + Tailwind CSS + Typescript + React Query + Axios 
+- Server -> Node Nest JS + PostgrSQL + Passport JS + TypeORM + Typescript
+- Mobile Application -> React Native + React Query + Axios + Typescript

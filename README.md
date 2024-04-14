@@ -1,4 +1,4 @@
-# SocialMedia-FullStack
+# Social Platform
 
 ## Tech Stack (under Progress)
 - Web -> Next JS + Tailwind CSS + Typescript + React Query + Axios 
